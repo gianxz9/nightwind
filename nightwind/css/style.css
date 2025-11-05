@@ -1,0 +1,123 @@
+/* style.css */
+:root {
+    --primary-color: #1f3fab;
+    --secondary-color: #000000;
+    --text-light: #ffffff;
+}
+
+/* Navbar principal */
+.navbar {
+    background-color: var(--primary-color) !important;
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+/* Brand/Logo */
+.navbar-brand {
+    color: var(--text-light) !important;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.navbar-brand:hover {
+    color: var(--text-light) !important;
+    opacity: 0.9;
+}
+
+/* Links de navegação */
+.nav-link {
+    color: var(--text-light) !important;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--text-light) !important;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
+.nav-link.active {
+    background-color: var(--secondary-color) !important;
+    border-radius: 4px;
+    color: var(--text-light) !important;
+}
+
+/* Dropdown */
+.dropdown-menu {
+    background-color: var(--primary-color);
+    border: 1px solid var(--secondary-color);
+}
+
+.dropdown-item {
+    color: var(--text-light) !important;
+    transition: all 0.3s ease;
+}
+
+.dropdown-item:hover {
+    background-color: var(--secondary-color);
+    color: var(--text-light) !important;
+}
+
+.dropdown-divider {
+    border-color: var(--secondary-color);
+    opacity: 0.5;
+}
+
+/* Botão do menu hamburguer */
+.navbar-toggler {
+    border-color: var(--text-light);
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Formulário de busca */
+.form-control {
+    border: 1px solid var(--secondary-color);
+    background-color: white;
+    color: var(--secondary-color);
+}
+
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(31, 63, 171, 0.25);
+}
+
+/* Botão de busca */
+.btn-outline-success {
+    color: var(--text-light);
+    border-color: var(--text-light);
+    background-color: transparent;
+}
+
+.btn-outline-success:hover {
+    background-color: var(--text-light);
+    color: var(--primary-color);
+    border-color: var(--text-light);
+}
+
+/* Responsividade */
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        background-color: var(--primary-color);
+        padding: 1rem;
+        border-radius: 0 0 8px 8px;
+        border: 1px solid var(--secondary-color);
+        border-top: none;
+    }
+    
+    .nav-item {
+        margin-bottom: 0.5rem;
+    }
+}
+
+/* Efeitos gerais */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Links desabilitados */
+.nav-link.disabled {
+    color: rgba(255, 255, 255, 0.5) !important;
+}

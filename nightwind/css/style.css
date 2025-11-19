@@ -121,3 +121,52 @@
 .nav-link.disabled {
     color: rgba(255, 255, 255, 0.5) !important;
 }
+
+/* ----- SEÇÃO DE PRODUTOS CLEAN ------ */
+
+.products-section {
+    width: 100%;
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+  
+  .product-card {
+    text-align: left;
+  }
+  
+  .product-img {
+    width: 100%;
+    max-width: 500px;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .product-title {
+    font-size: 11px;
+    color: #111;
+    margin-top: 12px;
+    letter-spacing: 0.5px;
+  }
+  
+  .product-price {
+    font-size: 11px;
+    color: #111;
+    opacity: 0.8;
+    margin-top: -5px;
+  }
+  
+  /* estilo geral clean */
+  body {
+    background: #ffffff;
+  }
+  
+  .navbar {
+    border-bottom: 1px solid #e6e6e6;
+  }
+  
+  /* ajusta a fonte do menu */
+  .navbar .nav-link {
+    font-size: 13px;
+    letter-spacing: 0.5px;
+  }
+  

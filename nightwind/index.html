@@ -3,48 +3,125 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Nightwind</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
-  <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Nightwind</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Lançamentos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Categorias
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#"></a></li>
-                  <li><a class="dropdown-item" href="#"></a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Cadastrar-se</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search"/>
-              <button class="btn btn-outline-success" type="submit">Pesquisar</button>
-            </form>
-          </div>
-        </div>
-      </nav>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+
+        <a class="navbar-brand" href="#">Nightwind</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+                aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+            <!-- MENU LANÇAMENTOS (NOVO) -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle fw-light text-uppercase" href="#" 
+                 role="button" data-bs-toggle="dropdown">
+                Lançamentos
+              </a>
+
+              <ul class="dropdown-menu border-0 shadow-sm p-3" style="min-width: 260px;">
+                
+                <h6 class="dropdown-header text-muted text-uppercase small">Novidades</h6>
+                <li><a class="dropdown-item py-2" href="#">Últimos Drops</a></li>
+                <li><a class="dropdown-item py-2" href="#">Coleção Streetwear</a></li>
+                <li><a class="dropdown-item py-2" href="#">T-Shirts Oversized</a></li>
+                <li><a class="dropdown-item py-2" href="#">Peças Limitadas</a></li>
+
+                <li><hr class="dropdown-divider"></li>
+
+                <h6 class="dropdown-header text-muted text-uppercase small">Categorias</h6>
+                <li><a class="dropdown-item py-2" href="#">Camisetas</a></li>
+                <li><a class="dropdown-item py-2" href="#">Calças & Cargo</a></li>
+                <li><a class="dropdown-item py-2" href="#">Moletons</a></li>
+                <li><a class="dropdown-item py-2" href="#">Acessórios</a></li>
+              </ul>
+            </li>
+
+            <!-- Seus menus antigos -->
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                Categorias
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#"></a></li>
+                <li><a class="dropdown-item" href="#"></a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Cadastrar-se</a>
+            </li>
+
+          </ul>
+
+          <!-- PESQUISA -->
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+          </form>
+
+        </div>
+      </div>
+    </nav>
+
+    <!-- =============================== -->
+    <!--      LISTA DE PRODUTOS         -->
+    <!-- =============================== -->
+
+    <section class="container-fluid products-section mt-5">
+
+      <h2 class="text-uppercase fw-light mb-4 ms-3" 
+          style="font-size: 13px; letter-spacing: 1px;">
+        Camisetas
+      </h2>
+
+      <div class="row g-5">
+
+        <!-- PRODUTO 1 -->
+        <div class="col-12 col-md-6 col-lg-4 product-card">
+          <img src="../nightwind/img/produto1.png" class="product-img" alt="">
+          <p class="product-title">Aerodesign Fit Tee</p>
+          <p class="product-price">R$199,90</p>
+        </div>
+
+        <!-- PRODUTO 2 -->
+        <div class="col-12 col-md-6 col-lg-4 product-card">
+          <img src="../nightwind/img/produto3.png" class="product-img" alt="">
+          <p class="product-title">Black Croco Belt</p>
+          <p class="product-price">R$159,90</p>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 product-card">
+          <img src="../nightwind/img/produto2.png" class="product-img" alt="">
+          <p class="product-title">Baggy Pants Nightcore </p>
+          <p class="product-price">R$399,90</p>
+        </div>
+  
+      </div>
+    </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
   </body>
 </html>
